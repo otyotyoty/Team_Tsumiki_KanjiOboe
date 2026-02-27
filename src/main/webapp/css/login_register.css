@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(255, 255, 255, 0.9),
+            rgba(245, 245, 245, 0.8),
+            rgba(255, 255, 255, 0) 60%
+        ),
+        radial-gradient(
+            circle at bottom left,
+            #6fa8ff,
+            #4f7cff 45%,
+            rgba(79, 124, 255, 0) 70%
+        ),
+        linear-gradient(
+            135deg,
+            #a07cff,
+            #c77dff
+        );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 카드 */
+.signup-container, .login-container {
+    width: 1000px;
+    height: 500px;
+    max-width: 90vw;
+
+    padding: 80px 40px;
+    background: linear-gradient(135deg, #f8fbff, #f3ecff);
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* 제목 */
+.signup-container h3 {
+    font-size: 28px;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.login-container h3 {
+    font-size: 28px;
+    margin-bottom: 6px;
+    margin-top:85px;
+    color: #333;
+}
+
+
+/* 부제목 */
+.signup-container h1, .login-container h1 {
+    font-size: 13px;
+    margin-bottom: 26px;
+    color: #868686;
+}
+
+/* 에러 메시지 */
+.error {
+    margin-bottom: 14px;
+    color: #e74c3c;
+    font-size: 13px;
+}
+
+/* 입력 그룹 */
+.singup-form-group, .form-group {
+    margin-bottom: 10px;
+}
+
+/* input */
+.singup-form-group input, .form-group input {
+    width: 30%;
+    margin: 0 auto;
+    display: block;
+
+    padding: 17px 18px;
+    font-size: 13px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: #ffffff;
+    box-shadow: inset 0 0 0 1px #e0e0e0;
+    transition: all 0.2s ease;
+}
+
+.singup-form-group input:focus, .form-group input:focus{
+    box-shadow: inset 0 0 0 2px #4f7cff;
+}
+
+/* 버튼 */
+.btn-submit {
+    margin-top: 22px;
+    width: 45%;
+    padding: 18px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    color: white;
+    background: #0b63f6;
+    transition: all 0.25s ease;
+}
+
+.btn-submit:hover {
+    background: #084dc2;
+    transform: translateY(-1px);
+}
+
+/* 로그인 링크 */
+.login-link, .signup-link {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.login-link a, .signup-link a {
+    color: #0b63f6;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-link a:hover, .signup-link a:hover {
+    text-decoration: underline;
+}
+
+.success {
+    margin-bottom: 14px;
+    color: #2ecc71;
+    font-size: 13px;
+}

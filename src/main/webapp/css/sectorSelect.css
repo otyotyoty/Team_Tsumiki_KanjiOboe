@@ -1,0 +1,139 @@
+/* =====================
+   전체 배경
+===================== */
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+
+    background:
+        radial-gradient(circle at top left,
+            rgba(255,255,255,0.9),
+            rgba(245,245,245,0.8),
+            rgba(255,255,255,0) 60%),
+        radial-gradient(circle at bottom left,
+            #6fa8ff,
+            #4f7cff 45%,
+            rgba(79,124,255,0) 70%),
+        linear-gradient(135deg, #a07cff, #c77dff);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =====================
+   카드 컨테이너
+===================== */
+.container {
+    width: 900px;
+    max-width: 90vw;
+    padding: 60px 40px;
+    background: linear-gradient(135deg, #f8fbff, #f3ecff);
+    border-radius: 26px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+/* =====================
+   헤더
+===================== */
+.header h1 {
+    font-size: 60px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.header p {
+    font-size: 14px;
+    color: #777;
+    margin: 4px 0;
+}
+
+.kanji-count {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #555;
+}
+
+/* =====================
+   섹터 그리드
+===================== */
+.sector-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 18px;
+    justify-items: center;
+}
+
+/* =====================
+   공통 버튼 (a/span 공통)
+===================== */
+.sector-btn {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none; /* a 밑줄 제거 */
+    user-select: none;
+    transition: all 0.25s ease;
+}
+
+/* =====================
+   학습 가능 (파랑)
+===================== */
+.sector-btn.active {
+    background: #2f6fff;
+    color: white;
+    box-shadow: 0 6px 12px rgba(47,111,255,0.35);
+    cursor: pointer;
+}
+
+.sector-btn.active:hover {
+    transform: translateY(-3px);
+    background: #2559cc;
+}
+
+/* =====================
+   미학습 (회색)
+===================== */
+.sector-btn.inactive {
+    background: #e6e6e6;
+    color: #999;
+    cursor: not-allowed;
+    box-shadow: inset 0 0 0 1px #d0d0d0;
+}
+
+/* (중요) 비활성은 hover 효과 없음 */
+.sector-btn.inactive:hover {
+    transform: none;
+}
+
+/* =====================
+   돌아가기 버튼
+===================== */
+.back-btn {
+    margin-top: 45px;
+    padding: 14px 36px;
+    font-size: 14px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    background: #0b63f6;
+    color: white;
+    transition: all 0.25s ease;
+}
+
+.back-btn:hover {
+    background: #0b63f6;
+    opacity: 0.5;
+}
