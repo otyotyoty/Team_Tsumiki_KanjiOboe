@@ -93,7 +93,7 @@ kanjiID, kanjiINDEX, kanji, onyomi(1〜3), kunyomi(1〜3), meaning, example(1〜
 | メンバー | 担当 |
 |---|---|
 | チョン・ジェヒョン（リーダー） | Git管理およびコード統合 |
-| **オ・テヨン（サブリーダー）** ← 担当 | **学習機能の実装、漢字DBモデリング設計・管理** |
+| **オ・テヨン（サブリーダー）** ← 担当者 | **学習機能の実装、漢字DBモデリング設計・管理** |
 | ナム・スンホ | 復習機能の実装、漢字データクローリング |
 | アン・スンゴン | テスト機能の実装、マイページ機能の実装 |
 | チェ・チョルウク | テスト機能の実装、ログ・会員DBモデリング設計・管理 |
@@ -102,3 +102,4 @@ kanjiID, kanjiINDEX, kanji, onyomi(1〜3), kunyomi(1〜3), meaning, example(1〜
 ## リンク
 
 - [リポジトリ](https://github.com/otyotyoty/Team_Tsumiki_KanjiOboe)
+- [発表資料（PDF）](./プロジェクト_漢字オボエ.pdf)
